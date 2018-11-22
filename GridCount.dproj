@@ -47,13 +47,11 @@
         <DCC_DebugInformation>1</DCC_DebugInformation>
         <VerInfo_PreRelease>true</VerInfo_PreRelease>
         <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
-        <DCC_UnitSearchPath>C:\dexetpu;C:\ESRI\AV_GIS30\ARCVIEW\BIN32;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_UsePackage>Vcl50;Vclx50;Vcldb50;TeeQR50;vclie50;dclocx50;dclaxserver50;VclSmp50;Qrpt50;Vclbde50;ibevnt50;vcldbx50;TeeUI50;TeeDB50;Tee50;VCLIB50;Inetdb50;Inet50;NMFast50;XPMenuPCK;ESRI;AdoCMPS;esbpcs_free_rt_d5;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_S>false</DCC_S>
         <DCC_ExeOutput>C:\ESRI\AV_GIS30\ARCVIEW\BIN32</DCC_ExeOutput>
         <DCC_Alignment>1</DCC_Alignment>
-        <DCC_DcuOutput>C:\dexetpu</DCC_DcuOutput>
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
         <DCC_ImageBase>00400000</DCC_ImageBase>
         <DCC_F>false</DCC_F>
@@ -93,12 +91,8 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <VerInfo_Keys>CompanyName=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
-        <DCC_ExeOutput>C:\ESRI\AV_GIS30\ARCVIEW\BIN32</DCC_ExeOutput>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
-        <DCC_UnitSearchPath>..\..\dexetpu\$(Platform)\$(Config);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <DCC_DcuOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_DcuOutput>
-        <DCC_BplOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_BplOutput>
-        <DCC_DcpOutput>..\..\dexetpu\$(Platform)\$(Config)</DCC_DcpOutput>
+        <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
     <ItemGroup>
@@ -131,9 +125,10 @@
                     <Source Name="MainSource">GridCount.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclIntraweb_140_200.bpl">IntraWeb 14.0 Design Package for RAD Studio XE6</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k200.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp200.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
